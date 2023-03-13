@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className='flex flex-col md:flex-row justify-center gap-4'>
           <Link href="services">
-            <button className='hero-btn btn-shadow'>VIEW ALL <BsArrowRight /> </button>
+            <button className='hero-btn'>VIEW ALL <BsArrowRight /> </button>
           </Link>
         </div>
 

@@ -10,7 +10,7 @@ body {
 
 
 .hero-header{
-  @apply font-bold text-white text-7xl xl:text-8xl
+  @apply font-bold text-white text-6xl xl:text-8xl
 }
 
 .hero-subText{
