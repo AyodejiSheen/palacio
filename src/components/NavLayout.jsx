@@ -35,7 +35,7 @@ function NavLayout() {
                     <div className={`w-full lg:block md:w-auto ${open ? "block" : "hidden"}`}>
                         <ul className="flex flex-col py-4 px-10 md:px-14 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-12 lg:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:text-base">
                             <li>
-                                <Link href="/" className="block py-2 pl-3 pr-4 rounded md:bg-transparent lg:text-base md:p-0 md:dark:bg-transparent font-bold hover:text-theme" aria-current="page">Home</Link>
+                                <Link href="/" onClick={handleBar} className="block py-2 pl-3 pr-4 rounded md:bg-transparent lg:text-base md:p-0 md:dark:bg-transparent font-bold hover:text-theme" aria-current="page">Home</Link>
                             </li>
 
 
@@ -45,7 +45,7 @@ function NavLayout() {
 
 
                             <li>
-                                <Link href="/about-us"  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-gray-700 rounded hover:text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:text-base">About Us </Link>
+                                <Link href="/about-us"  onClick={handleBar} className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-gray-700 rounded hover:text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:text-base">About Us </Link>
                             </li>
 
 
@@ -55,7 +55,7 @@ function NavLayout() {
 
 
                             <li>
-                                <Link href="contact-us" className="block font-bold py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-base">Contact Us</Link>
+                                <Link href="contact-us" onClick={handleBar} className="block font-bold py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-base">Contact Us</Link>
                             </li>
 
                         </ul>
