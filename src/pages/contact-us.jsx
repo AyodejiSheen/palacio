@@ -78,7 +78,7 @@ const ContactUs = () => {
 
           <div className='lg:w-1/2 space-y-8 lg:shadow-xl p-6 lg:p-16 xl:p-20 rounded-3xl'>
             <div>
-              <h2 className='text-axis mini-heading'>Send us a message</h2>
+              <h2 className='text-axis mini-head'>Send us a message</h2>
               <p className='subtitles'>You can contact us with anything related to our Products. We`ll get in touch with you as soon as possible</p>
             </div>
 

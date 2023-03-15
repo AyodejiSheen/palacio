@@ -11,7 +11,7 @@ const Footer = () => {
 
 
     const handleClick = (value) => {
-        router.push(`${value.index}/${value.title}`)
+        router.push(`/${value.index}/${value.title}`)
     }
 
 
@@ -35,16 +35,6 @@ const Footer = () => {
                                 )
                             })
                         }
-
-                        {/* <Link href="/#testimonials" className="footer-link"><>Events Scenting Services</></Link>
-                        <Link href="why-choose-us" className="footer-link"><>Wedding hall luxury Scenting </></Link>
-                        <Link href="terms-and-services" className="footer-link"><>Cruise Ships Luxury Scenting Services</></Link>
-                        <Link href="privacy-policy" className="footer-link"><>Aircrafts & Private jets luxury Scenting</></Link>
-                        <Link href="privacy-policy" className="footer-link">Hotel luxury Scenting Services</Link>
-                        <Link href="privacy-policy" className="footer-link">Indoor & Outdoor Lounges Scenting services</Link>
-                        <Link href="privacy-policy" className="footer-link">Exhibition Centers / Event Centers scenting services</Link>
-                        <Link href="privacy-policy" className="footer-link">Concert Scenting Services</Link>
-                        <Link href="privacy-policy" className="footer-link">Perfume Branding </Link> */}
                     </div>
                     <div>
                         <h1 className=' mini-head text-white'>CONTACT</h1>

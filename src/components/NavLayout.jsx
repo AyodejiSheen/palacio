@@ -55,7 +55,7 @@ function NavLayout() {
 
 
                             <li>
-                                <Link href="contact-us" onClick={handleBar} className="block font-bold py-2 pl-3 pr-4 text-gray-700 hover:bg-text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-base nav-link">Contact Us</Link>
+                                <Link href="/contact-us" onClick={handleBar} className="block font-bold py-2 pl-3 pr-4 text-gray-700 hover:bg-text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-base nav-link">Contact Us</Link>
                             </li>
 
                         </ul>
