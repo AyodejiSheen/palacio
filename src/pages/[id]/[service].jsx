@@ -2,20 +2,12 @@ import ServiceHero from '@/components/serviceHero'
 import { services } from 'assets/data'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
+import { BsCheckCircleFill } from 'react-icons/bs'
 
 const Service = () => {
 
     const router = useRouter()
     const { id, service } = router.query
-
-    useEffect(() => {
-        let findId = services.find((each) => each.id = id)
-        let findTitle = services.find((each) => each.title = service)
-
-        if (!findId || !findTitle){
-            router.back()
-        }
-    }, [])
 
 
     return (
@@ -28,6 +20,24 @@ const Service = () => {
                 <p className='subText'>
                     {services[id]?.text}
                 </p>
+            </section>
+
+            <section className='container justify-center justify-items-stretch mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 list-pad'>
+                {
+                    services[id]?.list.map((each, i) => {
+                        return (
+                                <div key={i} className='cursor-pointer  w-full list-note' data-aos="fade-down">
+                                    <div>
+                                        <BsCheckCircleFill className='w-5 h-5' />
+                                    </div>
+
+                                    <div className=''>
+                                        <p className='font-bold text-xl'>{each}</p>
+                                    </div>
+                                </div>
+                        )
+                    })
+                }
             </section>
 
         </>

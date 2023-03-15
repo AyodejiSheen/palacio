@@ -1,9 +1,20 @@
+import { services } from 'assets/data'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import logo from '../../assets/logo.png'
 
 const Footer = () => {
+
+    const router = useRouter()
+
+
+    const handleClick = (value) => {
+        router.push(`${value.index}/${value.title}`)
+    }
+
+
     return (
         <>
             <section className='bg-black section-pad'>
@@ -14,7 +25,18 @@ const Footer = () => {
 
                     <div className=''>
                         <h1 className='mini-head text-white'>KEY SERVICES</h1>
-                        <Link href="/#testimonials" className="footer-link"><>Events Scenting Services</></Link>
+
+                        {
+                            services.map((each, i) => {
+                                return (
+                                    <div onClick={() => handleClick({ index: i, title: each.title })} key={i} className='nav-link'>
+                                       <button className="footer-link">{each.title}</button>
+                                    </div>
+                                )
+                            })
+                        }
+
+                        {/* <Link href="/#testimonials" className="footer-link"><>Events Scenting Services</></Link>
                         <Link href="why-choose-us" className="footer-link"><>Wedding hall luxury Scenting </></Link>
                         <Link href="terms-and-services" className="footer-link"><>Cruise Ships Luxury Scenting Services</></Link>
                         <Link href="privacy-policy" className="footer-link"><>Aircrafts & Private jets luxury Scenting</></Link>
@@ -22,7 +44,7 @@ const Footer = () => {
                         <Link href="privacy-policy" className="footer-link">Indoor & Outdoor Lounges Scenting services</Link>
                         <Link href="privacy-policy" className="footer-link">Exhibition Centers / Event Centers scenting services</Link>
                         <Link href="privacy-policy" className="footer-link">Concert Scenting Services</Link>
-                        <Link href="privacy-policy" className="footer-link">Perfume Branding </Link>
+                        <Link href="privacy-policy" className="footer-link">Perfume Branding </Link> */}
                     </div>
                     <div>
                         <h1 className=' mini-head text-white'>CONTACT</h1>
@@ -36,9 +58,9 @@ const Footer = () => {
                 </div>
             </section>
 
-                <div className='border-t py-6 bg-black border-slate-500'>
-                    <p className="text-center footer-link">Copyright &copy; {new Date().getFullYear()} - Fragrance Palacio All Rights Reserved</p>
-                </div>
+            <div className='border-t py-6 bg-black border-slate-500'>
+                <p className="text-center footer-link">Copyright &copy; {new Date().getFullYear()} - Fragrance Palacio All Rights Reserved</p>
+            </div>
         </>
     )
 }

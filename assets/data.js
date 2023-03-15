@@ -146,7 +146,7 @@ export const services = [
             "Perfume branding",
             "Perfume gift sets for your occasions",
         ],
-        image: "https://res.cloudinary.com/dylrl8ydb/image/upload/v1678735691/palacio/bg15_kumv2z.jpg"
+        image: "https://res.cloudinary.com/dylrl8ydb/image/upload/v1678915575/palacio/bg15_rucfnb.jpg"
     },
 
 

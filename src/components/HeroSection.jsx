@@ -17,14 +17,14 @@ const HeroSection = (props) => {
         <>
             <div className="relative min-h-screen">
                 <div className='flex h-screen w-full absolute  items-center '>
-                    <div data-aos="zoom-in" className='bg-opacity-60 h-screen w-full bg-theme p-10 md:p-20 space-y-6 md:space-y-8 flex flex-col justify-center items-center md:items-start' style={{ zIndex: 1000 }}>
+                    <div  className='bg-opacity-60 h-screen w-full bg-theme p-10 md:p-20 space-y-6 md:space-y-8 flex flex-col justify-center items-center md:items-start' style={{ zIndex: 1000 }}>
                         <div className='text-center mx-auto space-y-6'>
-                            <div>
+                            <div data-aos="fade-left">
                                 <h1 className='hero-header'>{headerText}</h1>
                                 <h1 className='hero-subText'>{headerSubText}</h1>
                             </div>
 
-                            <div className='mx-auto'>
+                            <div className='mx-auto' data-aos="fade-up">
                                 <Link href="contact-us">
                                     <button className='hero-btn'>CONTACT US <BsArrowRight /> </button>
                                 </Link>

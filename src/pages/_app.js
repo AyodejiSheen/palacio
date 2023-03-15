@@ -1,13 +1,20 @@
 import Footer from '@/components/footer'
 import NavLayout from '@/components/NavLayout'
 import '@/styles/globals.css'
+import AOS from 'aos';
 import Head from 'next/head'
-
+import 'aos/dist/aos.css';
 import NextNProgress from 'nextjs-progressbar';
+import { useEffect } from 'react';
 
 
 
 export default function App({ Component, pageProps }) {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });  }, 
+    [])
+
   return (
     <>
       <Head>

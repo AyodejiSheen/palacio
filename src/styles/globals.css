@@ -38,6 +38,10 @@ body {
   @apply px-6 py-20 lg:p-24 space-y-12
 }
 
+.list-pad{
+  @apply px-6 lg:px-24 pb-24
+}
+
 .headerText{
   @apply text-4xl lg:text-6xl font-bold text-black text-center lg:text-left
 }
@@ -55,8 +59,7 @@ body {
 }
 
 .card-image{
-  @apply h-80 w-full object-cover rounded-tr-3xl
-rounded-bl-3xl
+  @apply h-80 w-full object-cover
 }
 
 .card-wrapper{
@@ -64,6 +67,15 @@ rounded-bl-3xl
 }
 
 .card-text-area{
-  @apply bg-theme h-max  text-white rounded-tr-3xl
-  p-3 rounded-bl-3xl
+  @apply bg-theme h-max  text-white hover:bg-black transition-all duration-500 p-3 
+}
+
+
+.list-note{
+  @apply font-semibold text-theme  flex gap-4 items-center border-2 border-theme border-dotted rounded-xl px-8 py-6 text-base mx-auto
+}
+
+
+.nav-link{
+  @apply hover:border-b-2 border-theme hover:rounded-none transition-all
 }
