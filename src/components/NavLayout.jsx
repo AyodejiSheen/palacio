@@ -23,7 +23,7 @@ function NavLayout() {
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
 
                     <Link href="/" className="flex items-center ">
-                        <Image src={logo} className="w-20" alt="Fragrance Palacio" />
+                        <Image src={logo} className="w-16 md:w-20" alt="Fragrance Palacio" />
                     </Link>
 
                     <button onClick={handleBar} type="button" className="inline-flex items-center p-1 ml-3 text-sm rounded-lg lg:hidden hover:bg-gray-100 border border-white text-white focus:bg-slate-900 focus:bg-opacity-20" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -40,7 +40,7 @@ function NavLayout() {
 
 
                             <li>
-                                <Link href="/services" className="relative flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-gray-700 hover:text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:text-base nav-link">Services</Link>
+                                <Link href="/services" onClick={handleBar} className="relative flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-gray-700 hover:text-theme md:hover:bg-transparent md:border-0 md:hover:text-theme md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:text-base nav-link">Services</Link>
                             </li>
 
 

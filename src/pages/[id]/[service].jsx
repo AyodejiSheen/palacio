@@ -32,7 +32,7 @@ const Service = () => {
                                     </div>
 
                                     <div className=''>
-                                        <p className='font-bold text-xl'>{each}</p>
+                                        <p className=''>{each}</p>
                                     </div>
                                 </div>
                         )

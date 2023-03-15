@@ -41,7 +41,7 @@ export default function Home() {
           {
             services?.slice(0, 3).map((each, i) => {
               return (
-                <div onClick={() => handleClick({ index: i, title: each.title })}  key={i} className='card-wrapper cursor-pointer' data-aos="zoom-in-left">
+                <div onClick={() => handleClick({ index: i, title: each.title })}  key={i} className='card-wrapper cursor-pointer' data-aos="fade-down">
                   <img src={each.image} alt="image card 1" className='card-image ' />
                   <div className='space-y-3 card-text-area'>
                     <h2 className='mini-head text-center'>{each.title}</h2>
