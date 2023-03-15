@@ -26,7 +26,7 @@ const ServiceHero = (props) => {
                             </div>
 
                             <div className=''>
-                                <Link href="contact-us">
+                                <Link href="/contact-us">
                                     <button className='hero-btn'>CONTACT US <BsArrowRight /> </button>
                                 </Link>
                             </div>

@@ -25,7 +25,7 @@ const HeroSection = (props) => {
                             </div>
 
                             <div className='mx-auto' data-aos="fade-up">
-                                <Link href="contact-us">
+                                <Link href="/contact-us">
                                     <button className='hero-btn'>CONTACT US <BsArrowRight /> </button>
                                 </Link>
                             </div>

@@ -19,7 +19,7 @@ function NavLayout() {
     return (
         <>
 
-            <nav className="w-full mx-auto px-4 backdrop-blur-2xl  py-4 fixed bg-theme bg-opacity-30 " style={{ zIndex: 100000 }}>
+            <nav className="w-full mx-auto px-4 backdrop-blur-2xl  py-4 fixed bg-theme bg-opacity-70" style={{ zIndex: 100000 }}>
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
 
                     <Link href="/" className="flex items-center ">
